@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Skill Safari | Social Media Dashboard with theme changer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Links -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="social media.css">
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="socialdarkmode.js"></script>
+</head>
+
+<body>
+  <div class="center container">
+
+    <!-- MAIN TITLE-->
+    <div class="row">
+      <div class="col-9">
+        <h3 class="main-title">
+          Social Media Dashboard
+        </h3>
+        <h6 class="main-subtitle">
+          Total Followers: 23,004
+        </h6>
+      </div>
+      <div class="breakpoint-1 center w-100">
+        <hr/>
+      </div>
+      <div class="slider-div col" style="overflow: hidden; ">
+        <h6 class="main-dark-subtitle">
+          Dark Mode
+        </h6>
+        <label class="switch">
+          <input type="checkbox" id="toggle-switch" onchange="DarkMode()" aria-label="dark-mode-switch">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+    <!-- MAIN CARDS-->
+    <div class="main-row row">
+      <div class="col">
+        <div class="main-card facebook-card card">
+          <div class="card-body">
+            <h6 class="social-media-name">
+              <span>
+                <img src="icon-facebook.svg" alt="fb-logo">
+              </span> &nbsp;
+              @someone
+            </h6>
+            <h1 class="followers-number">
+              1987
+            </h1>
+            <p class="followers-text">
+              F O L L O W E R S
+            </p>
+            <h6 class="followers-changes">
+              <span>
+                <img src="icon-up.svg" alt="gone-up">
+              </span>
+              12 Today
+            </h6>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="main-card twitter-card card">
+          <div class="card-body">
+            <h6 class="social-media-name">
+              <span>
+                <img src="icon-twitter.svg" alt="fb-logo">
+              </span> &nbsp;
+              @someone
+            </h6>
+            <h1 class="followers-number">
+              1044
+            </h1>
+            <p class="followers-text">
+              F O L L O W E R S
+            </p>
+            <h6 class="followers-changes">
+              <span>
+                <img src="icon-up.svg" alt="gone-up">
+              </span>
+              99 Today
+            </h6>
+          </div>
+        </div>
+      </div>
+      <div class="breakpoint-1 center w-100"></div>
+
+      <div class="col">
+        <div class="instagram-card-outer-div">
+          <div class="main-card instagram-card card">
+            <div class="card-body">
+              <h6 class="social-media-name">
+                <span>
+                  <img src="icon-instagram.svg" alt="fb-logo">
+                </span> &nbsp;
+                @someone
+              </h6>
+              <h1 class="followers-number">
+                11k
+              </h1>
+              <p class="followers-text">
+                F O L L O W E R S
+              </p>
+              <h6 class="followers-changes">
+                <span>
+                  <img src="icon-up.svg" alt="gone-up">
+                </span>
+                1099 Today
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="main-card youtube-card card">
+          <div class="card-body">
+            <h6 class="social-media-name">
+              <span>
+                <img src="icon-youtube.svg" alt="fb-logo">
+              </span> &nbsp;
+              Someone
+            </h6>
+            <h1 class="followers-number">
+              8239
+            </h1>
+            <p class="followers-text">
+              S U B S C R I B E R S
+            </p>
+            <h6 class="followers-changes">
+              <span>
+                <img src="icon-down.svg" alt="gone-down">
+              </span>
+              144 Today
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OVERVIEW TITLE -->
+    <div class="row">
+      <h4 class="overview-title" style="padding-left: 15px;">
+        Overview - Today
+      </h4>
+    </div>
+
+    <!-- OVERVIEW CARDS-->
+    <div class="overview-row-1 row">
+      <div class="col">
+        <div class="facebook-page-views">
+          <div class="overview-card card ">
+            <div class="row">
+              <div class="col-9 ">
+                <h6 class="overview-name">
+                  Page Views &nbsp;
+                </h6>
+              </div>
+              <div class="col-3">
+                <img src="icon-facebook.svg" alt="fb-logo">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-8">
+                <h3 class="overview-number">
+                  87
+                </h3>
+              </div>
+              <div class="col-4">
+                <h6 class="overview-changes">
+                  <span>
+                    <img src="icon-up.svg" alt="gone-up">
+                  </span>
+                  3%
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="facebook-likes">
+          <div class="overview-card card ">
+            <div class="row">
+              <div class="col-9 ">
+                <h6 class="overview-name">
+                  Likes &nbsp;
+                </h6>
+              </div>
+              <div class="col-3">
+                <img src="icon-facebook.svg" alt="fb-logo">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-8">
+                <h3 class="overview-number">
+                  52
+                </h3>
+              </div>
+              <div class="col-4">
+                <h6 class="overview-changes">
+                  <span>
+                    <img src="icon-down.svg" alt="gone-down">
+                  </span>
+                  2%
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="breakpoint-1 center w-100"></div>
+
+      <div class="col">
+        <div class="instagram-likes">
+          <div class="overview-card card ">
+            <div class="row">
+              <div class="col-9 ">
+                <h6 class="overview-name">
+                  Likes &nbsp;
+                </h6>
+              </div>
+              <div class="col-3">
+                <img src="icon-instagram.svg" alt="ig-logo">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-7">
+                <h3 class="overview-number">
+                  5462
+                </h3>
+              </div>
+              <div class="col-5">
+                <h6 class="overview-changes">
+                  <span>
+                    <img src="icon-up.svg" alt="gone-up">
+                  </span>
+                  2257%
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="instagram-profile-views">
+          <div class="overview-card card ">
+            <div class="row">
+              <div class="col-9 ">
+                <h6 class="overview-name">
+                  Profile Views &nbsp;
+                </h6>
+              </div>
+              <div class="col-3">
+                <img src="icon-instagram.svg" alt="ig-logo">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-7">
+                <h3 class="overview-number">
+                  52k
+                </h3>
+              </div>
+              <div class="col-5">
+                <h6 class="overview-changes">
+                  <span>
+                    <img src="icon-up.svg" alt="gone-up">
+                  </span>
+                  1375%
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="overview-row-2 row">
+      <div class="col">
+        <div class="twitter-retweets">
+          <div class="overview-card card ">
+            <div class="row">
+              <div class="col-9 ">
+                <h6 class="overview-name">
+                  Retweets &nbsp;
+                </h6>
+              </div>
+              <div class="col-3">
+                <img src="icon-twitter.svg" alt="twt-logo">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-7">
+                <h3 class="overview-number">
+                  117
+                </h3>
+              </div>
+              <div class="col-5">
+                <h6 class="overview-changes">
+                  <span>
+                    <img src="icon-up.svg" alt="gone-up">
+                  </span>
+                  303%
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="twitter-likes">
+          <div class="overview-card card ">
+            <div class="row">
+              <div class="col-9 ">
+                <h6 class="overview-name">
+                  Likes &nbsp;
+                </h6>
+              </div>
+              <div class="col-3">
+                <img src="icon-twitter.svg" alt="twt-logo">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-7">
+                <h3 class="overview-number">
+                  507
+                </h3>
+              </div>
+              <div class="col-5">
+                <h6 class="overview-changes">
+                  <span>
+                    <img src="icon-up.svg" alt="gone-up">
+                  </span>
+                  553%
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="breakpoint-1 center w-100"></div>
+      <div class="col">
+        <div class="youtube-likes">
+          <div class="overview-card card ">
+            <div class="row">
+              <div class="col-9 ">
+                <h6 class="overview-name">
+                  Likes &nbsp;
+                </h6>
+              </div>
+              <div class="col-3">
+                <img src="icon-youtube.svg" alt="yt-logo">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-7">
+                <h3 class="overview-number">
+                  107
+                </h3>
+              </div>
+              <div class="col-5">
+                <h6 class="overview-changes">
+                  <span>
+                    <img src="icon-down.svg" alt="gone-down">
+                  </span>
+                  19%
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="youtube-total-views">
+          <div class="overview-card card ">
+            <div class="row">
+              <div class="col-9 ">
+                <h6 class="overview-name">
+                  Total Views &nbsp;
+                </h6>
+              </div>
+              <div class="col-3">
+                <img src="icon-youtube.svg" alt="yt-logo">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-7">
+                <h3 class="overview-number">
+                  1407
+                </h3>
+              </div>
+              <div class="col-5">
+                <h6 class="overview-changes">
+                  <span>
+                    <img src="icon-down.svg" alt="gone-down">
+                  </span>
+                  12%
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p class="attribution">
+      Challenge by
+      <a href="https://www.skillsafari.in" target="_blank"
+        >Skill Safari</a>
+    </p>
+  </footer>
+</body>
+
+</html>
